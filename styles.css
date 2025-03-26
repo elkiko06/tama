@@ -1,0 +1,194 @@
+/* Estilo general del cuerpo */
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #DCDCDC;  
+}  
+
+/* Encabezado */
+header {  
+    background-color: #2D612F;  
+    color: white;   
+    padding: 1em;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    flex-wrap: wrap;  
+    gap: 10px; /* Espacio entre la imagen y el texto */  
+    margin: 0;  
+    border: none; /* Elimina bordes del contenedor */  
+    box-shadow: none; /* Elimina sombras adicionales */  
+}  
+
+header img {  
+    max-width: 150px;  
+    height: auto;  
+    margin: 0;  
+    padding: 0;  
+    background: none; /* Elimina cualquier fondo */  
+    border: none; /* Elimina bordes */  
+    box-shadow: none; /* Elimina sombras adicionales */  
+}  
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: none; /* Elimina fondos adicionales */
+    border: none; /* Elimina bordes */
+    box-shadow: none; /* Elimina sombras adicionales */
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}  
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: small;
+}  
+
+nav ul li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+nav a {  
+    color: white;  
+    text-decoration: none;  
+    font-weight: bold;  
+}  
+
+/* Secciones principales */
+main {  
+    padding: 20px;  
+}  
+
+section {  
+    margin-bottom: 30px;  
+    background-color: #fff;  
+    padding: 15px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+	font-size: 0.8em;
+	} 
+p {  
+    font-size: 0.9em; /* Para párrafos, si no están en una sección específica */  
+	display: inline; /* Hace que el <p> sea un elemento en línea */  
+    margin: 0; /* Elimina los márgenes */ 
+ 
+}  
+
+/* Tablas */
+table {  
+    width: 100%;  
+    border-collapse: collapse;  
+    margin-bottom: 20px;  
+}  
+
+table th, table td {  
+    padding: 10px;  
+    border: 1px solid #ddd;  
+    text-align: left;  
+    word-wrap: break-word; /* Permite saltos de línea en palabras largas */  
+    white-space: normal; /* Permite el ajuste del texto */  
+}  
+
+table th {  
+    background-color: #2D612F;  
+    color: white;  
+}  
+
+table td:first-child {  
+    text-align: justify; /* Justifica el contenido en la primera columna */  
+}  
+
+table td:last-child {  
+    text-align: center; /* Centra los precios */  
+}  
+
+/* Imágenes */
+img {  
+    max-width: 100%;  
+    height: auto;  
+    display: block;  
+    margin: 0 auto;  
+}  
+
+/* Pie de página */
+footer {  
+    text-align: center;  
+    padding: 10px 0;  
+    background-color: #2D612F;  
+    color: white;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+}  
+
+/* Estilos responsivos */
+@media (max-width: 600px) {  
+    /* Encabezado en móviles */
+    header {  
+        flex-direction: column;  
+        text-align: center;  
+        gap: 10px; /* Añade espacio entre la imagen y el texto */  
+    }  
+
+    header img {  
+        max-width: 120px;  
+    }  
+
+    /* Navegación en móviles */
+    nav ul li {  
+        display: block;  
+        margin: 10px 0;  
+    }  
+
+    /* Secciones en móviles */
+    section {  
+        padding: 10px;  
+    }  
+
+    /* Tablas en móviles */
+    table {  
+        display: block;  
+        overflow-x: auto;  
+        white-space: nowrap; /* Permite desplazamiento horizontal si es necesario */  
+    }  
+
+    table td:first-child {  
+        display: block; /* Cada celda ocupa una fila separada en móviles */  
+        white-space: normal;  
+        text-align: justify;  
+    }  
+
+    table td:last-child {  
+        text-align: right; /* Alínea los precios a la derecha */  
+    }  
+}
+
+/* Estilos para los enlaces */  
+.img-button {  
+    border: none; /* Sin borde */  
+    padding: 0;   /* Sin relleno */  
+    cursor: pointer; /* Cambia el cursor */  
+    margin: 10px;   /* Espaciado entre los botones */  
+    transition: transform 0.2s; /* Transición suave */  
+    display: inline-block; /* Para manejar el tamaño del enlace */  
+}  
+
+/* Efecto hover */  
+.img-button:hover {  
+    transform: scale(1.05); /* Aumento de tamaño al pasar el ratón */  
+}  
+
+/* Estilo específico de las imágenes */  
+img {  
+    border-radius: 8px; /* Bordes redondeados */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */  
+    max-width: 90%; /* Asegura que la imagen no sobrepase el 90% del ancho */  
+    height: auto; /* Mantiene la proporción */  
+}  
